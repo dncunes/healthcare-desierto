@@ -299,17 +299,17 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #33443C;
+    background: #F3FADC;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #F3FADC;
+    background-color: #33443C;
     border-radius: 10px;
-    border: 2px solid #33443C;
+    border: 2px solid #F3FADC;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #E4E8C4;
+    background-color: #3e6c58;
 }
 
 /* Substitle box for homepage*/
