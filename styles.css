@@ -23,8 +23,8 @@ body.home-page {
     background-color: #33443C;
     background-image: url("img/green_colors.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 900px auto;
+    background-position: center 40px;
+    background-size: 60% auto;
 }
 
 /* body for meet the team section */
@@ -55,22 +55,26 @@ body.team-page {
     color: #3f544b;
 }
 
-/* Visualization Buttons*/
+/* Home page Buttons*/
 .nav-buttons {
     display: flex;
     flex-direction: column;
-    align-items: column;
+    align-items: center;
     gap: 15px;
+    margin: 30px auto;
 }
 
 .nav-buttons a {
-    background-color: rgba(75, 100, 91, 0.7);
+    background-color: rgba(31, 42, 38, 0.7);
     padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     color: #F3FADC;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    min-height: 20px;
 }
 
 .nav-buttons a:hover {
@@ -87,7 +91,7 @@ body.team-page {
 .hamburger {
     font-size: 2em;
     cursor: pointer;
-    color: #33443C;
+    color: #F3FADC;
 }
 
 #menu-toggle {
@@ -306,6 +310,16 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #E4E8C4;
+}
+
+/* Substitle box for homepage*/
+.subtitle-box {
+    background-color: rgba(31, 42, 38, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
 }
 
 footer {
