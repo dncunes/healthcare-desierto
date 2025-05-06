@@ -1,0 +1,317 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-image: url("img/green_colors.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #33443c;
+    color: #F3FADC;
+    font-family: 'Lilita One', sans-serif;
+    line-height: 1.6;
+    padding: 40px;
+    flex: 1;
+}
+
+/* body for meet the team section */
+body.team-page {
+    background-image: url('./img/green_colors.jpg') !important;
+    background-size: cover !important;
+    background-repeat: repeat-y !important;
+    background-position: center top !important;
+    background-attachment: scroll !important;
+}
+
+/* Title Page*/
+.title {
+    text-align: center;
+    margin-left: 33px;
+    color: #33443c;
+    text-shadow: 2px 2px 6px #00000000;
+}
+
+/* Intro for homepage*/
+.intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3f544b;
+}
+
+/* Visualization Buttons*/
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    background-color: rgba(75, 100, 91, 0.7);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F3FADC;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #5C7C6F;
+}
+
+/* Hamburger Menu */
+.hamburger-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+}
+.hamburger {
+    font-size: 2em;
+    cursor: pointer;
+    color: #33443C;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #33443C;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.menu a {
+    color: #F3FADC;
+    text-decoration: none;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+}
+
+/*Meet the Team */
+.about-list {
+    margin-top: 20px;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+h1{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2.2em;
+    letter-spacing: 0.5px;
+    color: #33443c;
+}
+
+a {
+    color: #33443c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#F3FADC;
+}
+
+p {
+    font-family: 'Lilita One', sans-serif;
+    color: #33443C;  
+    font-weight: 550;  
+}
+
+/*Text box for the About our project page*/
+.text-box {
+    background-color: #1F2A26;
+    color: #F3FADC;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* style for inner tags to match */
+.text-box p,
+.text-box h1,
+.text-box h2 {
+    color: #F3FADC;
+}
+
+/* Download PDF button in Research Paper Page */
+.button {
+    display: inline-block;
+    background-color: #4B645B;
+    color: #F3FADC;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5C7C6F;
+}
+
+.button-wrapper {
+    text-align:center;
+    margin-top: 20px;
+}
+
+/* Visual grid for Visualizations page */
+.visual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.visual-card {
+    background-color: #F3FADC;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #F3FADC;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4)
+}
+
+.visual-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.visual-grid.viz-box {
+    background-color: #33443C;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #F3FADC;
+
+    /* Add outline to box */
+    border: 2px solid #1F2A26;
+}
+
+/* Code Snippet Style Section */
+.code-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.code-screenshots .visual-card {
+    background-color: #1F2A26;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #F3FADC;
+}
+
+.code-screenshots img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Meet the Team style */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.team-card {
+    background-color: #1F2A26;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #F3FADC;
+}
+
+.team-card h3,
+.team-card p{
+    color: #F3FADC;
+}
+
+.team-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    color: #F3FADC;
+}
+
+.team-card h3 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #F3FADC;
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #33443C;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F3FADC;
+    border-radius: 10px;
+    border: 2px solid #33443C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #E4E8C4;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px;
+    
+    /* Light Font in the Center */
+    -webkit-text-fill-color: #F3FADC;
+    color: #F3FADC;
+
+    /* Dark Outline */
+    -webkit-text-stroke: 1px #1F2A26;
+
+    text-shadow: none;
+}
