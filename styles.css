@@ -43,7 +43,7 @@ body.team-page {
 .title {
     text-align: center;
     margin-left: 33px;
-    color: #33443c;
+    color: #F3FADC;
     text-shadow: 2px 2px 6px #00000000;
 }
 
@@ -68,7 +68,7 @@ body.team-page {
 }
 
 .nav-buttons a {
-    background-color: rgba(31, 42, 38, 0.7);
+    background-color: rgba(25, 35, 32, 0.8);
     padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
