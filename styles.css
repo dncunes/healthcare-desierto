@@ -6,16 +6,25 @@ html, body {
 }
 
 body{
+    background-color: #33443C;
     background-image: url("img/green_colors.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #33443c;
+    background-position: center top;
+
     color: #F3FADC;
     font-family: 'Lilita One', sans-serif;
     line-height: 1.6;
     padding: 40px;
     flex: 1;
+}
+
+/* Body style for home page */
+body.home-page {
+    background-color: #33443C;
+    background-image: url("img/green_colors.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 600px auto;
 }
 
 /* body for meet the team section */
