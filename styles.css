@@ -175,6 +175,15 @@ p {
     color: #F3FADC;
 }
 
+.text-box .findings-box {
+    text-align: center !important;
+}
+
+.text-box.findings-box h2,
+.text-box.findings-box p {
+    text-align: center !important;
+}
+
 /* Download PDF button in Research Paper Page */
 .button {
     display: inline-block;
