@@ -30,9 +30,11 @@
 
      <!-- Dropdown menu section-->
       <div class="dropdown-section">
-        <button class="dropdown-toggle" onclick="toggleFacts()">Click to learn more about our stats!</button>
+        <button class="dropdown-toggle" onclick="toggleFacts('qa-section-1', this)">
+            <span class="arrow">&#9660;</span> Click to learn more about our stats!
+        </button>
         
-        <div id="qa-section" class="qa-content">
+        <div id="qa-section-1" class="qa-content">
             <div class="qa-box">
                 <p class="question">What was the overall percentage of accessibility?</p>
                 <p class="answer">Approximately 90.4% of healthcare facilities are in walking distance of public transportation</p>
@@ -49,52 +51,81 @@
                 <p class="question">How many healthcare facilities have no bus stops near them?</p>
                 <p class="answer">5 healthcare facilities have no bus stops near them. 4 are hospitals and 1 is a primary care facility.</p>
                 <hr>
-                <p class="question"></p>
+            </div>
+        </div>
+      </div>
+
+        <div class="dropdown-section">
+
+            <button class="dropdown-toggle" onclick="toggleFacts('qa-section-2', this)">
+                <span class="arrow">&#9660;</span>Click to learn more about our GIS Map findings!
+            </button>
+            <div id="qa-section-2" class="qa-content">
+                <div class="qa-box">
+                    <p class="question">Which demographic has the highest accessibility?</p>
+                    <p class="answer">The middle income has the highest accessibility.</p>
+                    <hr>
+                    <p class="question">Where are most of the healthcare facilities ans accessible bus stops located in Tucson?</p>
+                    <p class="answer">They are concentrated in central Tucson, especially near downtown and along major transit corridors.</p>
+                    <hr>
+                    <p class="question"> What does the green point data tell us about accessibility?</p>
+                    <p class="answer">Green points show bus stops within 0.25 miles of a healthcare facility. There are 177 of these, which is about 9.7% of all stops. This suggests strong public transit access in the city center.</p>
+                    <hr>
+                    <p class="question">How much does transit coverage improve when increasing the distance threshold?</p>
+                    <p class="answer"> When the distance is expanded to 1 mile, the number of accessible bus stops increases to 1,285, covering approximately 70% of stops.</p>
+                    <hr>
+                    <p class="question">Which areas of Tucson are less well-served by transit infrastructure?</p>
+                    <p class="answer"> The Southwest, Southeast and some Eastern neighborhoods have fewer bus stops near healthcare facilities, despite being residential areas.</p>
+                    <hr>
+                    <p class="question">What do the income patterns show in underserved areas?</p>
+                    <p class="answer">These regions often have lower median household incomes and rely more heavily on public transit, making the lack of access more impactful.</p>
+                    <hr>
+                    <p class="question">Do wealthier areas have better access to healthcare transit options?</p>
+                    <p class="answer">No. While northern and northeastern neighborhoods are more affluent, they tend to have fewer nearby bus stops or healthcare facilities- but residentsare less dependent on public transportation.</p>
+                    <hr>
+                    <p class="question">What does this reveal about healthcare accessibility accross Tucson?</p>
+                    <p class="answer">There's a clear geographic and socio-economic disparity. Lower-income residents on the outskirts face more difficulty accessing healthcare due to limited transit connectivty.</p>
+                </div>
             </div>
         </div>
 
         <div class="dropdown-section">
-            <button class="dropdown-toggle" onclick="toggleFacts()">Click to learn more about our GIS Map findings!</button>
-            <div id="qa-section" class="qa-content">
+
+            <button class="dropdown-toggle" onclick="toggleFacts('qa-section-3', this)">
+                <span class="arrow">&#9660;</span>Click to learn more about our  Heatmap findings!
+            </button>
+            <div id="qa-section-3" class="qa-content">
                 <div class="qa-box">
-                    <p class="question">What was the overall percentage of accessibility?</p>
-                    <p class="answer">Approximately 90.4% of healthcare facilities are in walking distance of public transportation</p>
+                    <p class="question">Which side of town has the worst accessibility?</p>
+                    <p class="answer">The Southwest and Southeast regions.</p>
                     <hr>
-                    <p class="question">What was the healthcare facility that was the farthest away from the nearest bus stop and how far away was it?</p>
-                    <p class="answer">Carondelet St. Raphael's Emergency Center located approximately 1.4 miles away</p>
+                    <p class="question">Which zipcodes specifically showed fewer bus stops and healthcare facilities?</p>
+                    <p class="answer">The zip codes showing the least amount of bus stops and healthcare facilities compared to other zip codes were 85713, 85745, 85757, and 85746.</p>
                     <hr>
-                    <p class="question">What was the healthcare facility that was the closest from the nearest bus stop and how far away was it?</p>
-                    <p class="answer"> ArchWell Health located approximately 6.5 feet.</p>
-                    <hr>
-                    <p class="question">What is the average distance someone has to walk from the bus stop to a healthcare facility?</p>
-                    <p class="answer"> Approximately 0.16 miles.</p>
-                    <hr>
-                    <p class="question">How many healthcare facilities have no bus stops near them?</p>
-                    <p class="answer">5 healthcare facilities have no bus stops near them. 4 are hospitals and 1 is a primary care facility.</p>
-                    <hr>
-                    <p class="question"></p>
+                    <p class="question"> Which neighborhoods were the most affected by having the lease amount of bus stops and facilities?</p>
+                    <p class="answer"> Those neighborhoods are South Tucson, Drexel Heights, and Valencia West.</p>
                 </div>
             </div>
-
-       <div class="text-box findings-box">
-        <h2>What side of town has the worst accessibility?</h2>
-        <p> The Southwest and Southeast regions.</p>
-       </div>
-
-       <div class="text-box findings-box">
-        <h2>Which income demographic had the highest accessibility?</h2>
-        <p> The middle income has the most accessibility.</p>
-       </div>
-
-       <footer>
-        Created for Our Senior Capstone Project - Spring 2025
-       </footer>
+        </div>
 
     <script>
-        function toggleFacts() {
-            const section = document.getElementById('qa-section');
-            section.style.display = (section.style.display == 'block') ? 'none' : 'block';
-        }
+        function toggleFacts(id, button) {
+            const section = document.getElementById(id);
+            const arrow = button.querySelector('.arrow');
+
+            if (section.style.display == 'block') {
+                section.style.display ='none';
+                arrow.classList.remove('rotate') 
+             } else {
+                section.style.display ='block';
+                arrow.classList.add('rotate');
+             }
+            }
     </script>
+
+    <footer>
+        Created for Our Senior Capstone Project - Spring 2025
+   </footer>
+
 </body>
 </html>
