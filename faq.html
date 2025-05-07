@@ -28,32 +28,53 @@
         <h1 class="title">Key Findings</h1>
      </div>
 
-      <!-- Key Findings Sections-->
-      <div class="text-box findings-box">
-        <h2>What was the overall accessibility percent?</h2>
-        <p> Approximately 90.4% of healthcare facilities are in proximity of public transportation.</p>
-       </div>
+     <!-- Dropdown menu section-->
+      <div class="dropdown-section">
+        <button class="dropdown-toggle" onclick="toggleFacts()">Click to learn more about our stats!</button>
+        
+        <div id="qa-section" class="qa-content">
+            <div class="qa-box">
+                <p class="question">What was the overall percentage of accessibility?</p>
+                <p class="answer">Approximately 90.4% of healthcare facilities are in walking distance of public transportation</p>
+                <hr>
+                <p class="question">What was the healthcare facility that was the farthest away from the nearest bus stop and how far away was it?</p>
+                <p class="answer">Carondelet St. Raphael's Emergency Center located approximately 1.4 miles away</p>
+                <hr>
+                <p class="question">What was the healthcare facility that was the closest from the nearest bus stop and how far away was it?</p>
+                <p class="answer"> ArchWell Health located approximately 6.5 feet.</p>
+                <hr>
+                <p class="question">What is the average distance someone has to walk from the bus stop to a healthcare facility?</p>
+                <p class="answer"> Approximately 0.16 miles.</p>
+                <hr>
+                <p class="question">How many healthcare facilities have no bus stops near them?</p>
+                <p class="answer">5 healthcare facilities have no bus stops near them. 4 are hospitals and 1 is a primary care facility.</p>
+                <hr>
+                <p class="question"></p>
+            </div>
+        </div>
 
-       <div class="text-box findings-box">
-        <h2>What was the healthcare facility that was the farthest away from the nearest bus stop and how far away was it?</h2>
-        <p> Carondelet St. Raphael's Emergency Center located approximately 1/4 mile away.</p>
-       </div>
-
-       <div class="text-box findings-box">
-        <h2>What was the healthcare facility that was the closest from the nearest bus stop and how far away was it?</h2>
-        <p> ArchWell Health located approximately 6.5 feet.</p>
-       </div>
-
-       <div class="text-box findings-box">
-        <h2>What is the average distance someone has to walk from the bus stop to a healthcare facility?</h2>
-        <p> Approximately 0.16 miles.</p>
-       </div>
-
-       <div class="text-box findings-box">
-        <h2>How many healthcare facilities have no bus stops near them?</h2>
-        <p> 5 healthcare facilities have no bus stops near them. <br>
-            4 are hospitals and 1 is a primary care facility.</p>
-       </div>
+        <div class="dropdown-section">
+            <button class="dropdown-toggle" onclick="toggleFacts()">Click to learn more about our GIS Map findings!</button>
+            <div id="qa-section" class="qa-content">
+                <div class="qa-box">
+                    <p class="question">What was the overall percentage of accessibility?</p>
+                    <p class="answer">Approximately 90.4% of healthcare facilities are in walking distance of public transportation</p>
+                    <hr>
+                    <p class="question">What was the healthcare facility that was the farthest away from the nearest bus stop and how far away was it?</p>
+                    <p class="answer">Carondelet St. Raphael's Emergency Center located approximately 1.4 miles away</p>
+                    <hr>
+                    <p class="question">What was the healthcare facility that was the closest from the nearest bus stop and how far away was it?</p>
+                    <p class="answer"> ArchWell Health located approximately 6.5 feet.</p>
+                    <hr>
+                    <p class="question">What is the average distance someone has to walk from the bus stop to a healthcare facility?</p>
+                    <p class="answer"> Approximately 0.16 miles.</p>
+                    <hr>
+                    <p class="question">How many healthcare facilities have no bus stops near them?</p>
+                    <p class="answer">5 healthcare facilities have no bus stops near them. 4 are hospitals and 1 is a primary care facility.</p>
+                    <hr>
+                    <p class="question"></p>
+                </div>
+            </div>
 
        <div class="text-box findings-box">
         <h2>What side of town has the worst accessibility?</h2>
@@ -68,5 +89,12 @@
        <footer>
         Created for Our Senior Capstone Project - Spring 2025
        </footer>
+
+    <script>
+        function toggleFacts() {
+            const section = document.getElementById('qa-section');
+            section.style.display = (section.style.display == 'block') ? 'none' : 'block';
+        }
+    </script>
 </body>
 </html>

@@ -292,6 +292,56 @@ p {
     margin-bottom: 10px;
 }
 
+/* Key Findings page */
+
+.dropdown-section {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dropdown-toggle {
+    background-color: rgba(25, 35, 32, 0.9);
+    color: #F3FADC;
+    padding: 0.7em 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.qa-content {
+    display: none;
+    margin-top: 1em;
+}
+
+.qa-box {
+    background-color: #F3FADC;
+    border-radius: 10px;
+    border-bottom: 3px solid #33443C;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+.question {
+    font-weight: bold;
+    color: #33443C;
+}
+
+.answer {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    color: #33443C;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
 /* Meet the Team style */
 .team-grid {
     display: grid;
