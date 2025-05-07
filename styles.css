@@ -205,17 +205,11 @@ p {
     margin-top: 20px;
 }
 
-/*Audio style */
-.music-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 1em;
-    max-width: 500px;
-    margin: 1em auto;
-    text-align: center;
-    color: #333;
-    font-style: italic;
-    font-weight: bold;
+/* Audio player style */
+.audio-center {
+    display: felx;
+    justify-content: center;
+    margin: 1em 0;
 }
 
 /* Visual grid for Visualizations page */
