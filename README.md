@@ -21,3 +21,13 @@ This project investigates the spatial relationship between healthcare facilities
 - Google Colab - cloud-based Jupyter notebook environment for development and collaboration
 - Google Maps API - retreiving place and distance data
 - GitHub - version control, collaboration, and hosting the final website and project files
+
+# Repository Structure
+
+# How to Run the Project
+
+# API Key Configuration
+
+# Key Findings
+
+# About Me
