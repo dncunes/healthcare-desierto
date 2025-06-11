@@ -3,6 +3,17 @@
 # PROJECT OVERVIEW
 This project investigates the spatial relationship between healthcare facilities and public transportation access in Tucson, Arizona. Using geospatial data, Google Maps APIs, and statistical analysis, we assess whether healthcare services are equitably accessible via public transit and identify underserved regions.
 
+# Project Website
+This project includes a live website that showcases:
+  - The research paper with background music
+  - Static Visualizations
+  - Code snippets from key analysis steps
+  - A Key Findings/ FAQ page
+  - A Meet the Team section
+
+Visit the website
+https://dncunes.github.io/healthcare-desierto/index.html
+
 # Objectives
 - Map and classify healthcare facilities by type and service coverage.
 - Measure walking and straight-line distances to the nearest bus stops.
