@@ -33,27 +33,27 @@ https://dncunes.github.io/healthcare-desierto/index.html
 - Google Maps API - retreiving place and distance data
 - GitHub - version control, collaboration, and hosting the final website and project files
 
-# Repository Structure
+### Repository Structure
 
-├── .git/                            # Git version control directory (hidden)
-├── img/                             # Image assets used on the website
+├── .git/ # Git version control directory (hidden)
+├── img/ # Image assets used on the website
 
-├── styles.css                       # Custom CSS styling for the website
-├── Drifting at 432 HZ - Unicorn Heads.mp3   # Background music for the research paper page
-├── project_config_template.json     # Template file for storing API key securely
+├── styles.css # Custom CSS styling for the website
+├── Drifting at 432 HZ - Unicorn Heads.mp3 # Background music for the research paper page
+├── project_config_template.json # Template file for storing API key securely
 
-├── index.html                       # Homepage of the project website
-├── about_the_project.html           # About the Project page
-├── paper.html                       # Research paper with embedded music
-├── visualizations.html              # Project visualizations
-├── code.html                        # Code snippets and explanations
-├── faq.html                         # Frequently asked questions and key findings
-├── about_us.html                    # Meet the Team page
+├── index.html # Homepage of the project website
+├── about_the_project.html # About the Project page
+├── paper.html # Research paper with embedded music
+├── visualizations.html # Project visualizations
+├── code.html # Code snippets and explanations
+├── faq.html # Frequently asked questions and key findings
+├── about_us.html # Meet the Team page
 
-├── capstone_report.pdf              # Final research paper (downloadable)
-├── Under Construction.pdf           # Placeholder before final paper was uploaded
+├── capstone_report.pdf # Final research paper (downloadable)
+├── Under Construction.pdf # Placeholder before final paper was uploaded
 
-├── README.md                        # Project overview and documentation (this file)
+├── README.md # Project overview and documentation (this file)
 
 # How to Run the Project
 
@@ -106,7 +106,7 @@ This method keeps your credentials secure while allowing others to run the proje
 - The areas that are less well-served by transit infrastructure were the Southwest, Southeast, and some East side neighborhoods.
 - The neighborhoods that were most affected by having the least amount of bus stops and facilities were South Tucson, Drexel Heights, and Valencia West.
 
-# About Me
+### About Me
 
 **Danielle Cunes**
 **B.S. in Information Science with a Data Science emphasis**
