@@ -108,9 +108,9 @@ This method keeps your credentials secure while allowing others to run the proje
 
 ### About Me
 
-**Danielle Cunes**
-**B.S. in Information Science with a Data Science emphasis**
-**University of Arizona | Graduated Spring 2025**
+**Danielle Cunes**  
+**B.S. in Information Science with a Data Science emphasis**  
+**University of Arizona | Graduated Spring 2025**  
 
 Passionate about solving real-world problems through data, APIs, and geospatial analysis.
 Interested in data science, machine learning, and building tools that make information more accessible.
