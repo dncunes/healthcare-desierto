@@ -35,21 +35,25 @@ https://dncunes.github.io/healthcare-desierto/index.html
 
 # Repository Structure
 
-├── .git/                     # Git version control directory (hidden by default)
-├── img/                      # Image assets used on the website
-├── styles.css                # Custom CSS styling for the website
-├── Drifting at 432 HZ - Unicorn Heads.mp3            # Background music for the research paper page
-├── project_config_template.json      # Template file for storing API key securely
-├── index.html                # Homepage of the project website
-├── paper.html             # Research paper with embedded music
-├── visualizations.html       # Page for project visualizations
-├── faq.html                  # Frequently asked questions and key findings
-├── about_us.html                 # Meet the Team page
-├── about_the_project.html                 # About the Project page
-├── code.html                 # Code snippets and explanations
-├── capstone_report.pdf                 # Final research paper (downloadable)
-├── Under Construction.pdf                # Placeholder until final paper was ready
-├── README.md                 # Project overview and documentation (this file)
+├── .git/                            # Git version control directory (hidden)
+├── img/                             # Image assets used on the website
+
+├── styles.css                       # Custom CSS styling for the website
+├── Drifting at 432 HZ - Unicorn Heads.mp3   # Background music for the research paper page
+├── project_config_template.json     # Template file for storing API key securely
+
+├── index.html                       # Homepage of the project website
+├── about_the_project.html           # About the Project page
+├── paper.html                       # Research paper with embedded music
+├── visualizations.html              # Project visualizations
+├── code.html                        # Code snippets and explanations
+├── faq.html                         # Frequently asked questions and key findings
+├── about_us.html                    # Meet the Team page
+
+├── capstone_report.pdf              # Final research paper (downloadable)
+├── Under Construction.pdf           # Placeholder before final paper was uploaded
+
+├── README.md                        # Project overview and documentation (this file)
 
 # How to Run the Project
 
