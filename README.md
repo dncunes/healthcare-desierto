@@ -34,6 +34,7 @@ https://dncunes.github.io/healthcare-desierto/index.html
 - GitHub - version control, collaboration, and hosting the final website and project files
 
 ### Repository Structure
+```
 ├── .git/ # Git version control directory (hidden)
 ├── img/ # Image assets used on the website
 
@@ -53,6 +54,7 @@ https://dncunes.github.io/healthcare-desierto/index.html
 ├── Under Construction.pdf # Placeholder before final paper was uploaded
 
 ├── README.md # Project overview and documentation (this file)
+```
 # How to Run the Project
 
 1. Clone the repository
