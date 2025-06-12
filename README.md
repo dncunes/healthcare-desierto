@@ -65,18 +65,60 @@ https://dncunes.github.io/healthcare-desierto/index.html
    If you plan to run the Python scripts locally (for distance calculations, API calls, etc.) install the required libraries:
    pip install -r requirements.txt
 3. Set up your API key
-   This project uses a project_config_template.json file to securely handle API keys.
-   - Copy project_config_template.json and rename it to project_config.json
-   - Open it and replace the placeholder with your actual API key:
+   This project uses a `project_config_template.json` file to securely handle API keys.
+   
+   - Copy the file and rename it to: `project_config.json`
+   - Open `project_config.json` and replace the placeholder with your actual API key:
+   - ```json
      {
         "API_KEY": "YOUR_API_KEY_HERE"
      }
-  4. Open the website
+     ```
+     > For a detailed explanation, see the [API Key Configuration](#-api-key-configuration) section.
+  5. Open the website
      You can open any of the .html files directly in a browser (e.g., index.html) or host the site using GitHub Pages or a local server.
 
-
 # API Key Configuration
+To keep your API key secure, this project uses a seperate config file instead of hardcoding the key directly into the code.
+Follow these steps:
+  1. Locate the file project_config_template.json in the root of the repository.
+  2. Copy it and rename the new file to:
+     project_config.json
+3. Edit project_config.json and replace the placeholder value with your actual Google Maps API key:
+   {
+  "API_KEY": "YOUR_API_KEY_HERE"
+   }
+4. Protect your key:
+   Make sure project_config.json is listed in your gitignore file to avoid uploading sensitive credentials.
+   Add this line to gitignore if its not already there:
+   project_config.json
+   
+This method keeps your credentials secure while allowing others to run the project with their own API key.
 
 # Key Findings
 
+- Approximately 90.4% of healthcare facilities are in walking distance of public transportation.
+- There were 5 total healthcare facilities that did not have sufficient access to public transportation. 4 were hospitals and 1 was a primary care facility.
+- The healthcare facility that was the farthest away from the nearest bus stop was Carondolet St. Raphael's Emergency Center located approximately 1.4 miles away.
+- The closest healthcare facility to the nearest bus stop was ArchWell Health located approximately 6.5 feet away.
+- The demographic with the highest accessibility was the middle income.
+- The majority of healthcare facilities and accessible bus stops were located in central Tucson, especially near Downtown and along major transit corridors.
+- The areas that are less well-served by transit infrastructure were the Southwest, Southeast, and some East side neighborhoods.
+- The neighborhoods that were most affected by having the least amount of bus stops and facilities were South Tucson, Drexel Heights, and Valencia West.
+
 # About Me
+
+**Danielle Cunes**
+**B.S. in Information Science with a Data Science emphasis**
+**University of Arizona | Graduated Spring 2025**
+
+Passionate about solving real-world problems through data, APIs, and geospatial analysis.
+Interested in data science, machine learning, and building tools that make information more accessible.
+
+[LinkedIn Profile](https://www.linkedin.com/in/daniellecunes/)
+
+---
+
+Collected local bus stop data from Pima County and the City of Tucson, used Google Maps APIs to identify healthcare facilities and calculate distances to nearby bus stops, then analyzed accessibility using summary statistics and visualized the results in R.
+
+This project was completed as part of a 3-person capstone team.
