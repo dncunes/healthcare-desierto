@@ -57,6 +57,24 @@ https://dncunes.github.io/healthcare-desierto/index.html
 
 # How to Run the Project
 
+1. Clone the repository
+   Open a terminal and run:
+   git clone https://github.com/dncunes/healthcare-desierto.git
+   cd healthcare-desierto
+2. Install dependencies
+   If you plan to run the Python scripts locally (for distance calculations, API calls, etc.) install the required libraries:
+   pip install -r requirements.txt
+3. Set up your API key
+   This project uses a project_config_template.json file to securely handle API keys.
+   - Copy project_config_template.json and rename it to project_config.json
+   - Open it and replace the placeholder with your actual API key:
+     {
+        "API_KEY": "YOUR_API_KEY_HERE"
+     }
+  4. Open the website
+     You can open any of the .html files directly in a browser (e.g., index.html) or host the site using GitHub Pages or a local server.
+
+
 # API Key Configuration
 
 # Key Findings
