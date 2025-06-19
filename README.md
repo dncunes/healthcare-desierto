@@ -95,6 +95,42 @@ Follow these steps:
    
 This method keeps your credentials secure while allowing others to run the project with their own API key.
 
+# Jupyter Notebook
+You can view my full process in the Jupyter notebook included in this repository:
+[View notebook](./final_project.ipynb)
+
+This notebook includes:
+- Using Google Maps APIs to locate healthcare facilities and gather key details
+- Loading and cleaning bus stop data from local sources
+- Calculating walking distances between each healthcare facility and nearby bus stops
+- Computing summary statistics to assess overall accessibility
+- Creating visualizations using Python (e.g., bar charts, distance distributions)
+- Exporting and refining additional visualizations using R for use on the website
+
+A code snippet from the distance calculation step:
+
+<pre> ```python
+  def get_walking_distance(lat1, lon1, lat2, lon2, API_KEY, mode='walking'):
+  if not API_KEY:
+    return "No API key is provided"
+
+  # Round coordinates to the 6th decimal place
+  lat1 = round((lat1), 6)
+  lon1 = round((lon1), 6)
+  lat2 = round((lat2), 6)
+  lon2 = round((lon2), 6)
+
+  # Set up url
+  url = get_distance_matrix_base_url()
+
+  # Set up params
+  params = {
+      'origins': f"{lat1},{lon1}",
+      'destinations': f"{lat2},{lon2}",
+      'mode': mode,
+      'key': API_KEY
+  } ``` </pre>
+
 # Key Findings
 
 - Approximately 90.4% of healthcare facilities are in walking distance of public transportation.
